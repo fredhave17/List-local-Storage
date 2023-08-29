@@ -1,10 +1,9 @@
 import { TouchableOpacityProps } from "react-native";
 
-import { Container, Title, FilterStylesProps } from "./styles";
-import React from "react";
+import { Container, Title, FilterStyleProps } from "./styles";
 
 type Props = TouchableOpacityProps &
-  FilterStylesProps & {
+  FilterStyleProps & {
     title: string;
   };
 
