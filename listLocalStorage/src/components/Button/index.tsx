@@ -16,12 +16,12 @@ export function Button({ title, type = "Primary", ...rest }: Props) {
     <>
       {type ? (
         "Primary" && (
-          <ContainerPrimary>
+          <ContainerPrimary {...rest}>
             <Title>{title}</Title>
           </ContainerPrimary>
         )
       ) : (
-        <ContainerSecondary>
+        <ContainerSecondary {...rest}>
           <Title>{title}</Title>
         </ContainerSecondary>
       )}
